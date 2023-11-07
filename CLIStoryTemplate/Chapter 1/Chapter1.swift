@@ -5,7 +5,7 @@
 
 import Foundation
 
-func chapterOne() {
+/*func chapterOne() {
     // Your portion of the story goes here
     
     //Function for getting user input.
@@ -160,5 +160,5 @@ func chapterOne() {
         
     print()
    
-}
+}*/
 

@@ -13,7 +13,7 @@ func chapterThree() {
     let scene1 = "The chipmunk leads her all the way. Wow"
     let scene2 = "So he chases her all the way to the wizard. Cool. "
     
-    var potion = ["Mystical", "Magical", "Random"]
+ //   var potion = ["Mystical", "Magical", "Random"]
     
     func chipmunkScene() {
         let scenes = [scene1, scene2]
