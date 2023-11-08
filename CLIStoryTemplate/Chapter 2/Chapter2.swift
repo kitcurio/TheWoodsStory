@@ -21,20 +21,15 @@ func chapterTwo() {
         case Miriam
         case Dennis
     }
-
+    
     var calamityCounter: Int = 0
     var calamityEndured: Int = 0
     let calamity = ["tremor", "beast", "lightning", "ambush", "forest fire", "quicksand pit", "mosquito swarm", ""]
     
-    switch calamity{
-    case 1:
-        print("You can feel the aura of a primordial beast encompassing you....")
-    default:
-        
-    }
+    
     /*  She comes to a fork in the road where one path is dangerous and takes 2 days to travel and one is safe but takes 4 days to travel. “Piece of cake!” she thought to herself. “It won’t be too long before I reach the apothecary’s adobe if I take the short path.” Suddenly, all the gruesome rumors of the shorter path start flooding her mind. Voices scrape against her prefrontal cortex. “Go back from whence you came!  Beware of the peril that comes with treading this dark path.”
      */
-    print("She comes to a fork in the road where one path is dangerous and takes 2 days to travel and one is safe but takes 4 days to travel.")
+    print("She comes to a fork in the road where one path is dangerous and takes 2 days to travel and one is safe but takes 4 days to travel... Please choose left or right")
     var choice = readLine()?.capitalized;
     
     var characters = ["Jane", "Snuggly", "Miriam", "Dennis"]
@@ -64,11 +59,12 @@ func chapterTwo() {
             choice = readLine()?.capitalized
         }
     }
-    func calamity() -> String {
+    func calamity() {
         if calamityCounter == 5 {
             print()
             calamityCounter = 0
             calamityEndured += 1
         }
     }
+    
 }
