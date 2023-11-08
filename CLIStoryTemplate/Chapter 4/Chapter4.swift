@@ -1,21 +1,21 @@
 //
 //  Chapter4.swift
 //  CLIStoryTemplate
-//
+// Kareem's Chapter
 
     import Foundation
 func chapterFour() {
     
-    // Define an enum to represent different character actions
+    //Started with enums to show the different character actions
     enum CharacterAction {
         case approachChipmunk
         case continueJourney
         case returnToSaveMom
     }
     
-    // Create a Character struct to encapsulate the character's behavior
+    // Struct with a bool to inicate if the character is brave or not
     struct Character {
-        var isBrave: Bool // Boolean to indicate whether the character is brave or not
+        var isBrave: Bool
         
         init(isBrave: Bool) {
             self.isBrave = isBrave // Initialize the character's bravery based on input
@@ -37,9 +37,9 @@ func chapterFour() {
             case .returnToSaveMom:
                 // Action: Return to save their mom or continue the journey
                 print("They have found the wizard's hut and obtained the potion.")
-                print("Time is running out. Do you want to return home to save your mom? (y/n)")
+                print("Time is running out. Do you want to save your mom? (y/n)")
                 
-                if let choice = readLine() { //Optional
+                if let choice = readLine() { // Readline for a optional
                     if choice.lowercased() == "y" {
                         returnAndSaveMom() // Call the function to save their mom
                     } else if choice.lowercased() == "n" {
@@ -51,9 +51,9 @@ func chapterFour() {
             }
         }
         
-        // Function to return home and save mom
+        // Function to save mom
         func returnAndSaveMom() {
-            print("They rush back home and successfully save their mom in the nick of time! What a hero!")
+            print("They rush back and successfully save their mom in the nick of time! What a hero!")
         }
         
         // Function to continue the journey
@@ -76,3 +76,6 @@ func chapterFour() {
         character.performAction(action: action)
     }
 }
+
+
+
